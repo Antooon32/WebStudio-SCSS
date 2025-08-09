@@ -1,0 +1,21 @@
+/* ----- What we do section ----- */
+
+.what-we-do-item {
+    position: relative;
+}
+
+.what-we-do-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background-color: var(--eighth_shadow_color);
+}

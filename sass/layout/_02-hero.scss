@@ -1,0 +1,44 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px; 
+    color: var(--second_light_color);
+    background-color: var(--dark_color);
+    margin: 0 auto;
+    background-image:
+    linear-gradient(
+        var(--fourth_dark_color),
+        var(--fourth_dark_color)
+    ),
+    url(../images/background_image.jpg);
+    background-size: 1600px 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ----- Hero ----- */
+
+.hero-title {
+    width: 696px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(33, 150, 243, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 15px rgb(33, 150, 243, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(33, 150, 243, 0);
+  }
+}
