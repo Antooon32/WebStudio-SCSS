@@ -67,6 +67,42 @@ textarea {
   outline: none;
 }
 
+:root {
+  /* ----- Color vars ----- */
+  --main_color: #2196f3;
+  --main_color_hover: #188ce8;
+  /* -------------------------- */
+  --dark_color: #2f303a;
+  --second_dark_color: #000000;
+  --third_dark_color: #757575;
+  --fourth_dark_color: rgba(47, 48, 58, 0.4);
+  --fifth_dark_color: #AFB1B8;
+  /* -------------------------- */
+  --light_color: #f5f4fa;
+  --second_light_color: #FFFFFF;
+  --third_light_color: rgba(255, 255, 255, 0.6);
+  --fourth_light_color: rgba(33, 150, 243, 0.9);
+  /* -------------------------- */
+  --shadow_color: rgba(0, 0, 0, 0.15);
+  --second_shadow_color: rgba(0, 0, 0, 0.2);
+  --third_shadow_color: rgba(0, 0, 0, 0.14);
+  --fourth_shadow_color: rgba(0, 0, 0, 0.12);
+  --fifth_shadow_color: rgba(0, 0, 0, 0.16);
+  --sixth_shadow_color: rgba(0, 0, 0, 0.06);
+  --seventh_shadow_color: rgba(255, 255, 255, 0.1);
+  --eighth_shadow_color: rgba(47, 48, 58, 0.8);
+  --ninth_shadow_color: rgba(0, 0, 0, 0.1);
+  --tenth_shadow_color: rgba(33, 33, 33, 0.2);
+  --eleventh_shadow_color: rgba(255, 255, 255, 0.3);
+  --twelfth_shadow_color: rgba(33, 150, 243, 0);
+  /* ----- Font vars ----- */
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+  /* ----- Portfolio vars ----- */
+  --portfolio-dark-color: #212121;
+  --portfolio-light-color: #F5F4FA;
+}
+
 body {
   font-family: var(--font-family);
   font-size: 14px;
@@ -937,40 +973,4 @@ body {
   font-size: 16px;
   line-height: 187%;
   color: var(--third_dark_color);
-}
-
-:root {
-  /* ----- Color vars ----- */
-  --main_color: #2196f3;
-  --main_color_hover: #188ce8;
-  /* -------------------------- */
-  --dark_color: #2f303a;
-  --second_dark_color: #000000;
-  --third_dark_color: #757575;
-  --fourth_dark_color: rgba(47, 48, 58, 0.4);
-  --fifth_dark_color: #AFB1B8;
-  /* -------------------------- */
-  --light_color: #f5f4fa;
-  --second_light_color: #FFFFFF;
-  --third_light_color: rgba(255, 255, 255, 0.6);
-  --fourth_light_color: rgba(33, 150, 243, 0.9);
-  /* -------------------------- */
-  --shadow_color: rgba(0, 0, 0, 0.15);
-  --second_shadow_color: rgba(0, 0, 0, 0.2);
-  --third_shadow_color: rgba(0, 0, 0, 0.14);
-  --fourth_shadow_color: rgba(0, 0, 0, 0.12);
-  --fifth_shadow_color: rgba(0, 0, 0, 0.16);
-  --sixth_shadow_color: rgba(0, 0, 0, 0.06);
-  --seventh_shadow_color: rgba(255, 255, 255, 0.1);
-  --eighth_shadow_color: rgba(47, 48, 58, 0.8);
-  --ninth_shadow_color: rgba(0, 0, 0, 0.1);
-  --tenth_shadow_color: rgba(33, 33, 33, 0.2);
-  --eleventh_shadow_color: rgba(255, 255, 255, 0.3);
-  --twelfth_shadow_color: rgba(33, 150, 243, 0);
-  /* ----- Font vars ----- */
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Raleway", sans-serif;
-  /* ----- Portfolio vars ----- */
-  --portfolio-dark-color: #212121;
-  --portfolio-light-color: #F5F4FA;
 }/*# sourceMappingURL=main.css.map */
