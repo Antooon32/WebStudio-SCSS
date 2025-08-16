@@ -1,0 +1,39 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+@mixin multi-transition($properties, $duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1), $delay: 0s) {
+  $transitions: ();
+
+  @if type-of($properties) == "list" {
+    @each $prop in $properties {
+      $transitions: append($transitions, #{$prop} $duration $timing-function $delay, comma);
+    }
+  } @else {
+    $transitions: #{$properties} $duration $timing-function $delay;
+  }
+
+  transition: $transitions;
+}

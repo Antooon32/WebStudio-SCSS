@@ -34,15 +34,15 @@
 <body>
     <header class="header">
         <div class="container flex">
-            <nav class="nav">
+            <nav class="nav flex">
                 <a class="nav-logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
-                <ul class="nav-list">
+                <ul class="nav-list flex">
                     <li class="nav-item"><a class="nav-link active-link" href="./index.html">Студія</a></li>
                     <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="nav-item"><a class="nav-link" href="./index.html">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="header-contacts-list">
+            <ul class="header-contacts-list flex">
                 <li class="contacts-item">
                     <a class="contacts-link" href="mailto:info@devstudio.com">
                         <svg class="contacts-svg" width="16px" height="12px">
@@ -72,7 +72,7 @@
         </section>
         <section class="our-features section">
             <div class="container">
-                <ul class="our-features-list">
+                <ul class="our-features-list flex">
                     <li class="our-features-item">
                         <h3 class="our-features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="our-features-description">Ідейні міркування, і навіть початок повсякденної
@@ -99,7 +99,7 @@
         <section class="what-we-do section">
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
-                <ul class="what-we-do-list">
+                <ul class="what-we-do-list flex">
                     <li class="what-we-do-item">
                         <img class="what-we-do-img" src="./images/programming.jpg" alt="Программування">
                         <h3 class="our-features-title overlay white no-margin">
@@ -124,7 +124,7 @@
         <section class="team section">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
-                <ul class="team-list">
+                <ul class="team-list flex">
                     <li class="team-item">
                         <img class="team-img" src="./images/igor.jpg" alt="Фото Ігоря Дем'яненка">
                         <h3 class="team-title">Ігор Дем'яненко</h3>
@@ -387,52 +387,52 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-close" data-modal-close>
+            <button class="modal__close" data-modal-close>
                 <svg width="11px" height="11px">
                     <use href="./images/symboldefs.svg#modal-close"></use>
                 </svg>
             </button>
-            <form class="modal-form flex-column" modal-form>
-                <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
-                <div class="main-content-form flex-column">
-                    <label class="modal-label flex-column">
+            <form class="modal-form" modal-form>
+                <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+                <div class="modal__main-content-form">
+                    <label class="modal__label">
                         Ім'я
-                        <div class="modal-input">
+                        <div class="modal__input">
                             <svg width="12px" height="12px">
                                 <use href="./images/symboldefs.svg#modal-name"></use>
                             </svg>
                             <input class="input" type="text" name="name" required>
                         </div>
                     </label>
-                    <label class="modal-label flex-column">
+                    <label class="modal__label">
                         Телефон
-                        <div class="modal-input">
+                        <div class="modal__input">
                             <svg width="14px" height="14px">
                                 <use href="./images/symboldefs.svg#modal-phone"></use>
                             </svg>
                             <input class="input" type="tel" name="tel" required>
                         </div>
                     </label>
-                    <label class="modal-label flex-column">
+                    <label class="modal__label">
                         Пошта
-                        <div class="modal-input">
+                        <div class="modal__input">
                             <svg width="16px" height="12px">
                                 <use href="./images/symboldefs.svg#modal-mail"></use>
                             </svg>
                             <input class="input" type="email" name="email" required>
                         </div>
                     </label>
-                    <label class="modal-label textarea-margin flex-column">
+                    <label class="modal__label modal__label--textarea-margin">
                         Коментар
-                        <textarea class="modal-textarea-comment" name="comment" placeholder="Введіть текст" required></textarea>
+                        <textarea class="modal__textarea-comment" name="comment" placeholder="Введіть текст" required></textarea>
                     </label>
                 </div>
-                <label class="modal-label-comment flex-center">
+                <label class="modal__label-comment">
                     <input type="checkbox" name="checkbox" required>
                     Погоджуюся з розсилкою та приймаю
-                    <a href="#" class="modal-link"> Умови договору</a>
+                    <a href="#" class="modal__link"> Умови договору</a>
                 </label>
-                <button class="modal-submit" type="submit" modal-submit>Відправити</button>
+                <button class="modal__submit" type="submit" modal-submit>Відправити</button>
             </form>
         </div>
     </div>

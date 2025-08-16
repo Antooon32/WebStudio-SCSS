@@ -22,12 +22,12 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const displayErrorMessage = (inputElement, message) => {
   let insertionPoint = inputElement;
-  if (inputElement.closest(".modal-input")) {
-    insertionPoint = inputElement.closest(".modal-input");
-  } else if (inputElement.classList.contains("modal-textarea-comment")) {
+  if (inputElement.closest(".modal__input")) {
+    insertionPoint = inputElement.closest(".modal__input");
+  } else if (inputElement.classList.contains("modal__textarea-comment")) {
     insertionPoint = inputElement;
   } else if (inputElement.type === "checkbox") {
-    insertionPoint = inputElement.closest(".modal-label-comment");
+    insertionPoint = inputElement.closest(".modal__label-comment");
   }
 
   removeErrorMessage(inputElement);
@@ -43,11 +43,11 @@ const displayErrorMessage = (inputElement, message) => {
 
 const removeErrorMessage = (inputElement) => {
   let checkElement = inputElement;
-  if (inputElement.closest(".modal-input")) {
-    checkElement = inputElement.closest(".modal-input");
+  if (inputElement.closest(".modal__input")) {
+    checkElement = inputElement.closest(".modal__input");
   } else if (inputElement.type === "checkbox") {
-    checkElement = inputElement.closest(".modal-label-comment");
-  } else if (inputElement.classList.contains("modal-textarea-comment")) {
+    checkElement = inputElement.closest(".modal__label-comment");
+  } else if (inputElement.classList.contains("modal__textarea-comment")) {
     checkElement = inputElement;
   }
 
@@ -60,9 +60,9 @@ const removeErrorMessage = (inputElement) => {
 
 const updateValidationStyles = (inputElement, isValid) => {
   let targetElement = null;
-  if (inputElement.closest(".modal-input")) {
-    targetElement = inputElement.closest(".modal-input");
-  } else if (inputElement.classList.contains("modal-textarea-comment")) {
+  if (inputElement.closest(".modal__input")) {
+    targetElement = inputElement.closest(".modal__input");
+  } else if (inputElement.classList.contains("modal__textarea-comment")) {
     targetElement = inputElement;
   }
 
