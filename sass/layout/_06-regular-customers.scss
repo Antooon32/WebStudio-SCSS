@@ -1,34 +1,30 @@
-/* ----- Regular customers */
+.regular-customers {
+    @include section;
 
-.regular-customers-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    &__title {
+        @include section-title;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__link {
+        width: 170px;
+        height: 92px;
+        border: 1px solid get-var('dark__color-5');
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: get-var('dark__color-5');
+        @include multi-transition((border, fill));
+
+        &:hover {
+            border: 1px solid get-var('main__color');
+            fill: get-var('main__color');
+        }
+    }
 }
-
-.regular-customers-link {
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--fifth_dark_color);
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: var(--fifth_dark_color);
-    transition-property: border, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* .regular-customers-svg {
-    fill: var(--fifth_dark_color);
-} */
-
-.regular-customers-link:hover {
-    border: 1px solid var(--main_color);
-    fill: var(--main_color);
-}
-
-/* .regular-customers-item:hover .regular-customers-svg {
-    fill: var(--main_color);
-} */
