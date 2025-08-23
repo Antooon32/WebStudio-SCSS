@@ -2,60 +2,60 @@
     @include section;
     padding-bottom: 0;
 
-    &__list {
+    .our-features-list {
         @include flex;
         gap: 30px;
-    }
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        /* gap: 30px; */
-        width: 270px;
-        height: 248px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            /* gap: 30px; */
+            width: 270px;
+            height: 248px;
 
-        &::before {
-            content: '';
-            /* width: 270px; */
-            height: 120px;
-            border-radius: 4px;
-            background-color: get-var('light__color');
-            background-repeat: no-repeat;
-            margin-bottom: 30px;
-            /* outline: 1px solid red; */
+            &::before {
+                content: '';
+                /* width: 270px; */
+                height: 120px;
+                border-radius: 4px;
+                background-color: get-var('light__color');
+                background-repeat: no-repeat;
+                margin-bottom: 30px;
+                /* outline: 1px solid red; */
+            }
+
+            &:nth-child(1)::before {
+                background-image: url(../images/antenna.svg);
+                background-position: center;
+            }
+
+            &:nth-child(2)::before {
+                background-image: url(../images/clock.svg);
+                background-position: center;
+            }
+
+            &:nth-child(3)::before {
+                background-image: url(../images/diagram.svg);
+                background-position: center;
+            }
+
+            &:nth-child(4)::before {
+                background-image: url(../images/astronaut.svg);
+                background-position: center;
+            }
         }
 
-        &:nth-child(1)::before {
-            background-image: url(../images/antenna.svg);
-            background-position: center;
+        &__title {
+            @include section-title-h3;
         }
 
-        &:nth-child(2)::before {
-            background-image: url(../images/clock.svg);
-            background-position: center;
+        &__description {
+            flex-grow: 1;
+            font-weight: 400;
+            line-height: 1.71;
+            color: get-var('dark__color-3');
+            /* outline: 1px dotted blue; */
         }
-
-        &:nth-child(3)::before {
-            background-image: url(../images/diagram.svg);
-            background-position: center;
-        }
-
-        &:nth-child(4)::before {
-            background-image: url(../images/astronaut.svg);
-            background-position: center;
-        }
-    }
-
-    &__title {
-        @include section-title-h3;
-    }
-
-    &__description {
-        flex-grow: 1;
-        font-weight: 400;
-        line-height: 1.71;
-        color: get-var('dark__color-3');
-        /* outline: 1px dotted blue; */
     }
 }

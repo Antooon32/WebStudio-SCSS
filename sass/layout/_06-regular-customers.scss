@@ -5,26 +5,26 @@
         @include section-title;
     }
 
-    &__list {
+    .regular-customers-list {
         display: flex;
         justify-content: center;
         gap: 30px;
-    }
 
-    &__link {
-        width: 170px;
-        height: 92px;
-        border: 1px solid get-var('dark__color-5');
-        border-radius: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        fill: get-var('dark__color-5');
-        @include multi-transition((border, fill));
+        &__link {
+            width: 170px;
+            height: 92px;
+            border: 1px solid get-var('dark__color-5');
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            fill: get-var('dark__color-5');
+            @include multi-transition((border, fill));
 
-        &:hover {
-            border: 1px solid get-var('main__color');
-            fill: get-var('main__color');
+            &:hover {
+                border: 1px solid get-var('main__color');
+                fill: get-var('main__color');
+            }
         }
     }
 }
