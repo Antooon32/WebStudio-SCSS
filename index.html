@@ -18,10 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- <link rel="stylesheet" href="./css/reset.css">
 
@@ -35,10 +32,13 @@
     <header class="header">
         <div class="container">
             <nav class="header__nav">
-                <a class="header__nav-logo" href="./index.html"><span class="header__nav-logo--span">Web</span>Studio</a>
+                <a class="header__nav-logo" href="./index.html"><span
+                        class="header__nav-logo--span">Web</span>Studio</a>
                 <ul class="nav-list">
-                    <li class="nav-list__nav-item"><a class="nav-list__nav-link nav-list__nav-link--active-link" href="./index.html">Студія</a></li>
-                    <li class="nav-list__nav-item"><a class="nav-list__nav-link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="nav-list__nav-item"><a class="nav-list__nav-link nav-list__nav-link--active-link"
+                            href="./index.html">Студія</a></li>
+                    <li class="nav-list__nav-item"><a class="nav-list__nav-link" href="./portfolio.html">Портфоліо</a>
+                    </li>
                     <li class="nav-list__nav-item"><a class="nav-list__nav-link" href="./index.html">Контакти</a></li>
                 </ul>
             </nav>
@@ -60,6 +60,13 @@
                     </a>
                 </li>
             </ul>
+            <div class="burger-menu">
+                <button class="burger">
+                    <svg width="16px" height="24px">
+                        <use href="./images/symboldefs.svg#burger"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -107,7 +114,8 @@
                         </h3>
                     </li>
                     <li class="what-we-do-list__item">
-                        <img class="what-we-do-list__img" src="./images/development.jpg" alt="Розробка мобільних програм">
+                        <img class="what-we-do-list__img" src="./images/development.jpg"
+                            alt="Розробка мобільних програм">
                         <h3 class="what-we-do-list__overlay">
                             Мобільні додатки
                         </h3>
@@ -269,68 +277,73 @@
             </div>
         </section>
         <section class="regular-customers">
-            <h2 class="regular-customers__title">Постійні клієнти</h2>
-            <ul class="regular-customers-list">
-                <li class="regular-customers-list__item">
-                    <a class="regular-customers-list__link" href="#">
-                        <svg class="regular-customers-list__svg" width="41px" height="47px">
-                            <use href="./images/symboldefs.svg#yaco"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="regular-customers-list__item">
-                    <a class="regular-customers-list__link" href="#">
-                        <svg class="regular-customers-list__svg" width="40px" height="52px">
-                            <use href="./images/symboldefs.svg#tagline"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="regular-customers-list__item">
-                    <a class="regular-customers-list__link" href="#">
-                        <svg class="regular-customers-list__svg" width="44px" height="42px">
-                            <use href="./images/symboldefs.svg#company"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="regular-customers-list__item">
-                    <a class="regular-customers-list__link" href="#">
-                        <svg class="regular-customers-list__svg" width="85px" height="41px">
-                            <use href="./images/symboldefs.svg#foster_peters"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="regular-customers-list__item">
-                    <a class="regular-customers-list__link" href="#">
-                        <svg class="regular-customers-list__svg" width="63px" height="46px">
-                            <use href="./images/symboldefs.svg#brand"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="regular-customers-list__item">
-                    <a class="regular-customers-list__link" href="#">
-                        <svg class="regular-customers-list__svg" width="94px" height="44px">
-                            <use href="./images/symboldefs.svg#company_tagline"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="regular-customers__title">Постійні клієнти</h2>
+                <ul class="regular-customers-list">
+                    <li class="regular-customers-list__item">
+                        <a class="regular-customers-list__link" href="#">
+                            <svg class="regular-customers-list__svg" width="41px" height="47px">
+                                <use href="./images/symboldefs.svg#yaco"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="regular-customers-list__item">
+                        <a class="regular-customers-list__link" href="#">
+                            <svg class="regular-customers-list__svg" width="40px" height="52px">
+                                <use href="./images/symboldefs.svg#tagline"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="regular-customers-list__item">
+                        <a class="regular-customers-list__link" href="#">
+                            <svg class="regular-customers-list__svg" width="44px" height="42px">
+                                <use href="./images/symboldefs.svg#company"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="regular-customers-list__item">
+                        <a class="regular-customers-list__link" href="#">
+                            <svg class="regular-customers-list__svg" width="85px" height="41px">
+                                <use href="./images/symboldefs.svg#foster_peters"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="regular-customers-list__item">
+                        <a class="regular-customers-list__link" href="#">
+                            <svg class="regular-customers-list__svg" width="63px" height="46px">
+                                <use href="./images/symboldefs.svg#brand"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="regular-customers-list__item">
+                        <a class="regular-customers-list__link" href="#">
+                            <svg class="regular-customers-list__svg" width="94px" height="44px">
+                                <use href="./images/symboldefs.svg#company_tagline"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
                 <div class="footer__address">
-                    <a class="footer__logo" href="./index.html"><span class="header__nav-logo--span">Web</span>Studio</a>
+                    <a class="footer__logo" href="./index.html"><span
+                            class="header__nav-logo--span">Web</span>Studio</a>
                     <address class="footer__address-e">
                         <ul class="address-list">
-                            <li class="address-list__item"><a class="address-list__link address-list__link--white" href="./index.html">м. Київ, пр-т
+                            <li class="address-list__item"><a class="address-list__link address-list__link--white"
+                                    href="./index.html">м. Київ, пр-т
                                     Лесі
                                     Українки,
                                     26</a></li>
                             <li class="address-list__item"><a class="address-list__link"
                                     href="mailto:info@devstudio.com">info@devstudio.com</a>
                             </li>
-                            <li class="address-list__item"><a class="address-list__link" href="tel:+38-096-111-11-11">+38 096 111 11
+                            <li class="address-list__item"><a class="address-list__link"
+                                    href="tel:+38-096-111-11-11">+38 096 111 11
                                     11</a>
                             </li>
                         </ul>
@@ -373,7 +386,7 @@
                     <h3 class="footer__h3-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
                     <form class="footer__form-content">
                         <input name="footer__email" class="footer__input" type="email" placeholder="E-mail">
-                        <button class="footer__submit" type="submit">                           
+                        <button class="footer__submit" type="submit">
                             Підписатися
                             <svg width="24px" height="24px">
                                 <use href="./images/symboldefs.svg#subscribe"></use>
@@ -424,7 +437,8 @@
                     </label>
                     <label class="modal__label modal__label--textarea-margin">
                         Коментар
-                        <textarea class="modal__textarea-comment" name="comment" placeholder="Введіть текст" required></textarea>
+                        <textarea class="modal__textarea-comment" name="comment" placeholder="Введіть текст"
+                            required></textarea>
                     </label>
                 </div>
                 <label class="modal__label-comment">

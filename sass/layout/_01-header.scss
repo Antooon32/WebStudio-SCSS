@@ -11,15 +11,24 @@
 
     .container {
         @include flex;
+
+        @media screen and (max-width: 767.5px) {
+            justify-content: space-between;
+        }
     }
 
     &__nav {
-        margin-right: 310px;
+        @media screen and (min-width: 768px) {
+            margin-right: 70px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 310px;
+        }
         @include flex;
     }
 
     &__nav-logo {
-        margin-right: 93px;
+        // margin-right: 93px;
         color: get-var('dark__color-2');
         font-family: get-var('font__family-2');
         font-size: 26px;
@@ -35,7 +44,17 @@
     }
 
     .nav-list {
-        @include flex;
+        display: none;
+        // margin-left: 93px;
+
+        @media screen and (min-width: 768px) {
+            @include flex;
+            margin-left: 87px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
 
         &__nav-item {
             position: relative;
@@ -76,8 +95,7 @@
     }
 
     .contacts-list {
-        display: flex;
-        gap: 30px;
+        display: none;
         /* align-items: stretch; */
         /* margin-top: 6.5px; */
 
@@ -95,6 +113,31 @@
                 color: get-var('main__color');
                 fill: get-var('main__color');
             }
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 30px;
+        }
+    }
+
+    .burger {
+        background-color: get-var('light__color-2');
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            display: none;
         }
     }
 }

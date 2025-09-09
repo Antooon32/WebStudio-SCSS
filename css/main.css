@@ -110,11 +110,30 @@ body {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1600px;
   padding: 0 15px;
-  /* border: 5px solid tomato; */
-  /* outline: 1px dashed tomato; */
+  margin: 0 auto;
+  outline: 1px solid tomato;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    outline: 1px solid green;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    outline: 1px solid blue;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    outline: 1px solid yellow;
+  }
 }
 
 .backdrop {
@@ -313,13 +332,26 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767.5px) {
+  .header .container {
+    justify-content: space-between;
+  }
+}
 .header__nav {
-  margin-right: 310px;
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .header__nav {
+    margin-right: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    margin-right: 310px;
+  }
+}
 .header__nav-logo {
-  margin-right: 93px;
   color: #000000;
   font-family: "Raleway";
   font-size: 26px;
@@ -332,8 +364,19 @@ body {
   color: #2196f3;
 }
 .header .nav-list {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header .nav-list {
+    display: flex;
+    align-items: center;
+    margin-left: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .nav-list {
+    margin-left: 93px;
+  }
 }
 .header .nav-list__nav-item {
   position: relative;
@@ -367,8 +410,7 @@ body {
   animation: appearDisappear 2s infinite alternate;
 }
 .header .contacts-list {
-  display: flex;
-  gap: 30px;
+  display: none;
   /* align-items: stretch; */
   /* margin-top: 6.5px; */
 }
@@ -385,6 +427,33 @@ body {
 .header .contacts-list__link:hover {
   color: #2196f3;
   fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .header .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .contacts-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.header .burger {
+  background-color: #FFFFFF;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .header .burger {
+    display: none;
+  }
 }
 
 @keyframes appearDisappear {
