@@ -1,5 +1,10 @@
 .what-we-do {
+    display: none;
     @include section;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 
     &__title {
         @include section-title;

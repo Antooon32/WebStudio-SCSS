@@ -7,11 +7,23 @@
     }
 
     .team-list {
-        @include flex;
+        @include flex-column;
+        gap: 30px;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
+
 
         &__item {
+            flex-basis: 100%;
             border-radius: 0 0 4px 4px;
-            width: 270px;
+            min-width: 270px;
             /* height: 368px; */
             background-color: get-var('light__color-2');
             box-shadow:
@@ -19,12 +31,17 @@
                 0 1px 1px 0 get-var('shadow__color-3'),
                 0 1px 3px 0 get-var('shadow__color-4');
 
-            &:not(:last-child) {
-                margin-right: 30px;
+            @media screen and (min-width: 768px) {
+                flex-basis: calc((100% - 30px) / 2);
+            }
+
+            @media screen and (min-width: 1200px) {
+                flex-basis: calc((100% - 120px) / 4);
             }
         }
 
         &__img {
+            width: 100%;
             margin-bottom: 30px;
         }
 

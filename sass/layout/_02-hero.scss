@@ -1,6 +1,7 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
     color: get-var('light__color-2');
     background-color: get-var('dark__color');
     margin: 0 auto;
@@ -8,23 +9,40 @@
         linear-gradient(get-var('dark__color-4'),
             get-var('dark__color-4')),
         url(../images/background_image.jpg);
-    background-size: 1600px 600px;
+    background-size: 135% 400px;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+        background-size: 100% 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-size: 1600px 600px;
+    }
 
     .container {
         @include flex-column-center;
     }
 
     &__title {
-        width: 696px;
+        
+        max-width: 696px;
         margin-bottom: 30px;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 162%;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
     }
 }
 
