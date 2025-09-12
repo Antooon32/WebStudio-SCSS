@@ -154,6 +154,7 @@
         border-radius: 4px;
         // width: 100%;
         width: 450px;
+        max-width: 100%;
         height: 50px;
         box-shadow: 0 4px 4px 0 get-var('shadow__color');
         background: get-var('shadow__color-12');
