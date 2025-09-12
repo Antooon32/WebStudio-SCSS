@@ -60,12 +60,65 @@
                     </a>
                 </li>
             </ul>
-            <div class="burger-menu">
-                <button class="burger">
-                    <svg width="16px" height="24px">
-                        <use href="./images/symboldefs.svg#burger"></use>
+            <button class="burger-menu__open" data-burger-open>
+                <svg width="16px" height="24px">
+                    <use href="./images/symboldefs.svg#burger"></use>
+                </svg>
+            </button>
+            <div class="burger-menu displaynone" data-burger>
+                <button class="burger-menu__close" data-burger-close>
+                    <svg width="40px" height="40px">
+                        <use href="./images/symboldefs.svg#burger-close"></use>
                     </svg>
                 </button>
+
+                <ul class="bnav-list">
+                    <li class="bnav-list__nav-item">
+                        <a class="bnav-list__nav-link bnav-list__nav-link--active" href="./index.html">Студія</a>
+                    </li>
+                    <li class="bnav-list__nav-item">
+                        <a class="bnav-list__nav-link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="bnav-list__nav-item">
+                        <a class="bnav-list__nav-link" href="./index.html">Контакти</a>
+                    </li>
+                </ul>
+
+                <ul class="bcontacts-list">
+                    <li class="bcontacts-list__contacts-item">
+                        <a class="bcontacts-list__link1" href="tel:+38-096-111-11-11">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="bcontacts-list__contacts-item">
+                        <a class="bcontacts-list__link2" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="bsocial-list">
+                    <li class="bsocial-list__social-item">
+                        <a class="bsocial-list__social-link" href="#">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="bsocial-list__social-item">
+                        <a class="bsocial-list__social-link" href="#">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="bsocial-list__social-item">
+                        <a class="bsocial-list__social-link" href="#">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="bsocial-list__social-item">
+                        <a class="bsocial-list__social-link" href="#">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -453,6 +506,7 @@
 
     <!--! Скрипт модалки -->
     <script src="./js/modal.js"></script>
+    <script src="./js/burger.js"></script>
 </body>
 
 </html>
