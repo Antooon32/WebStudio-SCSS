@@ -152,8 +152,8 @@
     &__input {
         border: 1px solid get-var('shadow__color-11');
         border-radius: 4px;
-        width: 100%;
-        max-width: 450px;
+        // width: 100%;
+        width: 450px;
         height: 50px;
         box-shadow: 0 4px 4px 0 get-var('shadow__color');
         background: get-var('shadow__color-12');
